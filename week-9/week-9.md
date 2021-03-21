@@ -1,0 +1,35 @@
+# Week 9 Notes
+
+- Visualizing data with Bokeh
+  - Note to self: Clean up all the random test `conda` environments you made
+  - `ModuleNotFoundError: No module named 'bokeh'` --> this may be the '!' vs '%' install thing, gonna reinstall `bokeh` with latter and try again
+    - Yep it worked with '%' --> magic commands...
+  - The "Munitions Dropped by Allied Country" graph isn't scaled very well --> can't see contributions of other countries compared to USA and GB
+    - Could this be better visualized in antoher format?
+  - Changed colour of fragmentions in "Bombing Operations over Time" plot because I had trouble distinguishing the light yellow from the white background
+  - Ah running the mapping activity created an infinite loop and crashed my laptop --> *classic*
+  - Warnings to keep in mind when build own notebooks
+    - `BokehDeprecationWarning: 'legend' keyword is deprecated, use explicit 'legend_label', 'legend_field', or 'legend_group' keywords instead`
+    - `FutureWarning: Indexing with multiple keys (implicitly converted to a tuple of keys) will be deprecated, use a list instead. grouped = df.groupby('COUNTRY_FLYING_MISSION')['TOTAL_TONS', 'TONS_HE', 'TONS_IC', 'TONS_FRAG'].sum()`
+
+- Looking at Ingenium data
+  - I accidentally clicked the link to the Ingenium data and it automatically downloaded so I'm gonna take that as fate and go with it
+  - This dataset is very inconsistent in it's formatting --> would need some cleaning for a full scale project
+  - Pre-plot Qs
+    - I wonder what field most artifacts are related to --> what does this say about Ottawa's tech history?
+      - I'm thinking railway? logging related things (boat parts)?
+    - Conversely, what categories do most things fall into?
+  - Counting by manufacturer without the context of date seems like it may be ineffective --> one company could be listed under multiple separate names due to change over time
+  - Oh my labels definitely need to be rotated --> `p.xaxis.major_label_orientation = "vertical"`
+  - Not sure of a palette expansive enough for this data
+  - Categories graph broke due to too many categories... --> better way to visualize?
+    - This may be a time for pie charts to shine
+    - Well the pie chart works but the size of the graph area and colours don't...
+    - TO DO: Fix chart area and colours
+  - Conclusions
+    - Top 3 fields: Agriculture, Aviation, Physics
+      - Aviation makes sense --> war plane manufacturing
+        - Physics probably for this same reason
+      - Agriculture --> didn't realize Ottawa was such a hub for agricultural equipment?
+    - Top 3 categories: Research, Archives, Commemorative
+      - Is there a consistent naming scheme for categories? --> many like "Clothing" or "Atomic and nuclear" yet these very broad, unspecific catergories at top
