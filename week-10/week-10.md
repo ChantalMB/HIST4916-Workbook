@@ -1,0 +1,26 @@
+# Week 10 Notes
+
+- Going to not do the tutorial I wrote --> hoping some people will ask questions though so I can make note of anything unclear
+- [Working with Data in Tabular Format](https://melaniewalsh.github.io/Intro-Cultural-Analytics/Data-Analysis/Data-Analysis.html)
+  - Definitely need this right now ty Melanie Walsh
+  - Interrogation of data --> very useful questions that I'm putting all here for future reference
+    - Who collected this data?
+    - How and why was this data collected?
+    - What assumptions are present in this data?
+    - What are the consequences of this data in the world?
+    - What does this data reflect about the world?
+  - `.sample()`
+    - Random sample of rows
+  - `.describe()`
+    - Calculate summary statistics for every numerical column
+    - `.describe(include='all')` for addition of non-numeric columns
+  - `slave_voyages_df['percent_women'].fillna('no gender information recorded')`
+    - Fill the NaN values in the DataFrame with a different value
+  - `slave_voyages_df.groupby('national_affiliation')`
+    - Groups data by specified columns
+  - `film_df = film_df.drop_duplicates(keep='first')`
+    - check for duplicated rows and drops the instances after the first
+  - `pd.merge(characters, metadata, on='script_id')`
+    - Like SQL --> merge specified tables on column that they have in common
+- Datasette Brainstorm
+  - TO DO: Look at GLAM workbench for final notebook inspo so you know what data you specifically need
