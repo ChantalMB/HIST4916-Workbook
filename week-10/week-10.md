@@ -23,4 +23,14 @@
   - `pd.merge(characters, metadata, on='script_id')`
     - Like SQL --> merge specified tables on column that they have in common
 - Datasette Brainstorm
-  - TO DO: Look at GLAM workbench for final notebook inspo so you know what data you specifically need
+  - ~TO DO: Look at GLAM workbench for final notebook inspo so you know what data you specifically need~
+  - [Create large composite images from snipped words](https://glam-workbench.github.io/trove-newspapers/#create-large-composite-images-from-snipped-words)
+    - I want to do more with the scraper I made for Canadiana for downloading cookbooks --> make it download all cookbooks associated with search "cookery ottawa"
+    - Create composite images from title pages or ads?
+    - 20th century might be most interesting
+  - [A random item from Museums Victoria's collections](https://glam-workbench.github.io/museumsvictoria/#a-random-item-from-museums-victorias-collections)
+    - Could this be done with the Ingenium collection? --> items would have to be filtered to ensure there's an image associated with them
+    - What happens when items are removed from the context of their collection? how might this cause the item to be reinterpreted? --> could be interesting to have this notebook also list the metadata for users to read
+  - [Using screenshots to visualise change in a page over time](https://glam-workbench.github.io/web-archives/#using-screenshots-to-visualise-change-in-a-page-over-time)
+    - This could be interesting to look at the more HCI aspect of CHI --> look at one of Ottawa's GLAM institute's home page
+    - Analyze how accessible information is about both the institution itself and their collections
